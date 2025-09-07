@@ -1,0 +1,5 @@
+./calculate_time.sh: line 12: ./actor_squares: No such file or directory
+
+real	0m0.060s
+user	0m0.000s
+sys	0m0.031s

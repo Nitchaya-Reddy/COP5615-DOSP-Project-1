@@ -107,6 +107,8 @@ Available cores
 
 *Cores Available:* 8
 
+**Output** ![output for n=1000000 k=4](./example.png)
+
 # Largest Problem Solved
 
 The implementation was successfully tested on a maximum input size of:

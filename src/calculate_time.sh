@@ -46,3 +46,4 @@ echo "System Time: $st seconds"
 echo "CPU Time: $cpu seconds"
 echo "CPU Time to Real Time Ratio: $ratio"
 echo "Available cores: $CORES"
+

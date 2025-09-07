@@ -8,18 +8,14 @@ ARGS=("$@")
 # Detect available cores
 CORES=$(nproc 2>/dev/null || echo "N/A")
 
-# Run program with timing
 { time "$PROGRAM" "${ARGS[@]}" ; } > program_output.txt 2> timing_output.txt
 
-# Print program's normal output first
 cat program_output.txt
 
-# Extract times from built-in 'time'
 real=$(grep real timing_output.txt | awk '{print $2}')
 user=$(grep user timing_output.txt | awk '{print $2}')
 sys=$(grep sys timing_output.txt | awk '{print $2}')
 
-# Convert m/s format like 1m23.456s into seconds
 to_seconds() {
   local t="$1"
   if [[ "$t" =~ ([0-9]+)m([0-9]+\.[0-9]+)s ]]; then
@@ -50,3 +46,4 @@ echo "System Time: $st seconds"
 echo "CPU Time: $cpu seconds"
 echo "CPU Time to Real Time Ratio: $ratio"
 echo "Available cores: $CORES"
+

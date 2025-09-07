@@ -119,6 +119,10 @@ n = 2,000,000, k = 4
 
 For values beyond this, execution times became too long for practical use.
 
+**Output** 
+
+![output for n=2000000 k=4](./largest-problem.png)
+
 # Performance Optimization
 
 *Tuned Unit Size:* A unit size of 650 was determined to be the most efficient.

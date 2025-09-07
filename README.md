@@ -132,6 +132,3 @@ For values beyond this, execution times became too long for practical use.
 *Effective Concurrency:* Worker actors operate independently and complete at different times, ensuring cores remain active.
 
 *Reduced Messaging Overhead:* Workers send results in batches rather than reporting individual findings, improving efficiency.
-
-
-# Output for n=10000000 k=24

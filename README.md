@@ -117,13 +117,13 @@ Available cores
 
 The implementation was successfully tested on a maximum input size of:
 
-n = 2,000,000, k = 4
+n = 10,000,000, k = 24
 
 For values beyond this, execution times became too long for practical use.
 
 **Output** 
 
-![output for n=2000000 k=4](./largest-problem.png)
+![output for n=10000000 k=24](./output.png)
 
 # Performance Optimization
 
@@ -132,3 +132,6 @@ For values beyond this, execution times became too long for practical use.
 *Effective Concurrency:* Worker actors operate independently and complete at different times, ensuring cores remain active.
 
 *Reduced Messaging Overhead:* Workers send results in batches rather than reporting individual findings, improving efficiency.
+
+
+# Output for n=10000000 k=24

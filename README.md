@@ -109,7 +109,7 @@ Available cores
 
 **Output** 
 
-## Solution for gleam run **1000000 4** does not exist
+**Solution for gleam run 1000000 4 does not exist**
 
 ![output for n=1000000 k=4](./example.png)
 

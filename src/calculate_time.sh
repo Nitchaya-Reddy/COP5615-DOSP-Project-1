@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Usage: ./timeCalculate.sh ./program.exe [args...]
+# Usage: ./calculate_time.sh ./program.exe [args...]
 
 PROGRAM="$1"
 shift
@@ -34,23 +34,12 @@ to_seconds() {
 rt=$(to_seconds "$real")
 ut=$(to_seconds "$user")
 st=$(to_seconds "$sys")
-
-OFFSET1=$((1*4)) # 2 minutes
-
-st=$(awk -v t="$(to_seconds "$sys")" 'BEGIN{print t+0.35}')
-
-
 cpu=$(awk -v u="$ut" -v s="$st" 'BEGIN{print u+s}')
 ratio=$(awk -v c="$cpu" -v r="$rt" 'BEGIN{if (r>0) printf("%.2f", c/r); else print "NaN"}')
-approx=$(awk -v x="$CORES" 'BEGIN{printf("%d", x-1)}')
-extra=4
+approx=$(awk -v x="$CORES" 'BEGIN{printf("%d", x)}')
 
 
-
-
-
-
-gleam run 
+gleam run
 
 echo
 echo

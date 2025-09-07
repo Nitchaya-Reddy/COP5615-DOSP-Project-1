@@ -65,7 +65,7 @@ Returns any valid starting numbers to the boss.
 
 Reads the input values (n, k).
 
-Calls boss.find_all_sums(n, k, unit_size).
+Calls boss.find_all_squares(n, k, unit_size).
 
 Displays any valid starting numbers received.
 

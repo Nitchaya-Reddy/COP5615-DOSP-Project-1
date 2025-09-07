@@ -107,10 +107,6 @@ Available cores
 
 *Cores Available:* 8
 
-# Interpretation:
-
-A CPU/Real ratio of 5.36 indicates that the program made efficient use of about 5 CPU cores. A ratio near 1 would suggest mostly sequential execution with minimal parallel speedup.
-
 # Largest Problem Solved
 
 The implementation was successfully tested on a maximum input size of:

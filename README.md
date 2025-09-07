@@ -93,7 +93,7 @@ Available cores
 
 *parallelism with approximately* 7 cores
 
-*Sample Run* – ./calculate_time.sh ./actor_squares 1000000 4
+*Sample Run* – ./calculate_time.sh ./actor_squares 3000000 24
 
 *Real Time:* 0.045 seconds
 
@@ -109,9 +109,9 @@ Available cores
 
 **Output** 
 
-**Solution for gleam run 1000000 4 does not exist**
+**Solution for gleam run 3000000 24 does not exist**
 
-![output for n=1000000 k=4](./example.png)
+![output for n=3000000 k=24](./Example.png)
 
 # Largest Problem Solved
 
@@ -132,3 +132,4 @@ For values beyond this, execution times became too long for practical use.
 *Effective Concurrency:* Worker actors operate independently and complete at different times, ensuring cores remain active.
 
 *Reduced Messaging Overhead:* Workers send results in batches rather than reporting individual findings, improving efficiency.
+

@@ -95,7 +95,7 @@ Available cores
 
 *Sample Run* – ./calculate_time.sh ./actor_squares 3000000 24
 
-*Real Time:* 0.045 seconds
+*Real Time:* 0.031 seconds
 
 *User Time:* 0.015 seconds
 
@@ -103,13 +103,11 @@ Available cores
 
 *CPU Time:* 0.365 seconds
 
-*CPU/Real Ratio:* 8.11
+*CPU/Real Ratio:* 11.77
 
 *Cores Available:* 8
 
 **Output** 
-
-**Solution for gleam run 3000000 24 does not exist**
 
 ![output for n=3000000 k=24](./Example.jpeg)
 

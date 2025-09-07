@@ -39,13 +39,13 @@ This architecture enables true parallel execution across multiple CPU cores.
 
 # Message Types:
 
-*Start* – Initiates the computation with n, k, and the specified work unit size.
+*InitializeSearch* – Initiates the computation with n, k, and the specified work unit size.
 
-*WorkerReply* – Contains partial results from a worker.
+*PartialResults* – Contains partial results from a worker.
 
-*WorkerDone* – Indicates that a worker has completed its assigned task.
+*WorkerFinished* – Indicates that a worker has completed its assigned task.
 
-*Behavior:* Once all workers have completed, the boss sends the full list of results back to the main process.
+*Terminate:* Once all workers have completed, the boss sends the full list of results back to the main process.
 
 # Worker Actor
 
@@ -108,6 +108,8 @@ Available cores
 *Cores Available:* 8
 
 **Output** 
+
+## Solution for gleam run **1000000 4** does not exist
 
 ![output for n=1000000 k=4](./example.png)
 

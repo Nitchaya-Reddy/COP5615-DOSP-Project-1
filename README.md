@@ -111,7 +111,7 @@ Available cores
 
 **Solution for gleam run 3000000 24 does not exist**
 
-![output for n=3000000 k=24](./Example.png)
+![output for n=3000000 k=24](./Example.jpeg)
 
 # Largest Problem Solved
 
